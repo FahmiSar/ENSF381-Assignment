@@ -18,7 +18,6 @@ header img{
 
 a {
     font-family: "Arial", sans-serif; font-size: 16px; color: green; text-decoration: underline
-
 }
 
 a:hover {
@@ -37,5 +36,31 @@ a:hover {
 
 .shop-now-btn:hover {
     background-color: #2980b9;color: blue  
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-container > img{
+    width: 15%;
+}
+
+.flex-container > button{
+    width: 6%;
+    margin: 0;
+}
+
+.flex-container > h3{
+    font-size: x-large;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.flex-container > p{
+    margin-top: 5px;
+    font-size: large;
 }
 
