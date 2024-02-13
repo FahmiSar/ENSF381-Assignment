@@ -1,32 +1,46 @@
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center; font-size:2 px; font-family:sans-serif
-}
-
 header {
-    display: flex;
-    align-items: flex-start;
     background-color: #333;
+    padding: 20px;
+    margin: 0;
+    display: flex;
     color: white;
-    text-align: left;
+    justify-content: space-between;
 }
 
-header img{
-    width: 20%;
+div{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
 }
 
-a {
-    font-family: "Arial", sans-serif; font-size: 16px; color: green; text-decoration: underline
+/* I dont really like how the text is formatted*/
+main > .about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ddd;
 }
 
-a:hover {
+
+/* div > a prevents the "shop now" button from being effected */
+div a {
+    font-family: "Arial", sans-serif; 
+    font-size: 20px; 
+    color: green; 
+    text-decoration: underline;
+}
+
+div a:hover {
     color: red
 }
 
-.shop-now-btn {
-    display: inline-block;
-    padding: 10px 20px;
+main .shop-now-btn {
+    padding: 10px;
+    margin: 20px;
     background-color: #3498db;
     color: #fff;
     text-decoration: none;
@@ -34,10 +48,31 @@ a:hover {
     transition: background-color 0.3s ease;
 }
 
-.shop-now-btn:hover {
+main .shop-now-btn:hover {
     background-color: #2980b9;color: blue  
 }
 
+main .customer-reviews{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    /* below are extra things */ 
+    font-family:sans-serif
+}
+
+
+/* .flex-container is used in products.html (will be renamed cause its a bad name)*/
+/* Lost marks for assignment 1 cause we didn't have 4 products (add two more)*/
 .flex-container{
     display: flex;
     flex-direction: column;
