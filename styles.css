@@ -103,3 +103,51 @@ p{
     color:Black; font-family: sans-serif
  }
 
+/* log in page - safaa*/
+
+form {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    display: block;
+    margin: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    opacity: 0.5;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45A049;
+    opacity: 1.0;
+}
+/* dek what the sign up link is?*/
+a.signup-link {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 10px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+a.signup-link:hover {
+    text-decoration: underline;
+}
