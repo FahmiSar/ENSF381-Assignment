@@ -1,3 +1,7 @@
+body{
+    background-color:lightblue;
+}
+
 header {
     background-color: #333;
     padding: 20px;
@@ -71,35 +75,51 @@ footer {
 }
 
 
-/* .flex-container is used in products.html (will be renamed cause its a bad name)*/
-/* Lost marks for assignment 1 cause we didn't have 4 products (add two more)*/
-.flex-container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.product-container{
+    display: grid;
+    /*fr stands for frational unit it represents
+    a fraction of the availble space in the grid*/
+    grid-template-columns: repeat(2,1fr); 
+    background-color: #ddd;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center; /*for horizontal*/
+    align-items: center; /*for vertical*/
 }
 
-.flex-container > img{
-    width: 15%;
+.product-item{
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
-.flex-container > button{
-    width: 6%;
-    margin: 0;
+.product-item img{
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-.flex-container > h3{
-    font-size: x-large;
-    margin-top: 1%;
-    margin-bottom: 0;
+.product-name{
+    margin: 10px 0;
 }
 
-.flex-container > p{
-    margin-top: 5px;
-    font-size: large;
+.product-price{
+    font-weight: bold;
 }
 
-p{
-    color:Black; font-family: sans-serif
- }
+.add-to-cart-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+}
 
