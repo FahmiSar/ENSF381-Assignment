@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
 }
 
-div{
+nav{
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -31,14 +31,14 @@ main > .about-us{
 
 
 /* div > a prevents the "shop now" button from being effected */
-div a {
+nav a {
     font-family: "Arial", sans-serif; 
     font-size: 20px; 
     color: green; 
     text-decoration: underline;
 }
 
-div a:hover {
+nav a:hover {
     color: red
 }
 
@@ -74,44 +74,39 @@ footer {
     font-family:sans-serif
 }
 
+/* product.html - fahmi*/
 
-.product-container{
+.products-grid {
     display: grid;
-    /*fr stands for frational unit it represents
-    a fraction of the availble space in the grid*/
-    grid-template-columns: repeat(2,1fr); 
-    background-color: #ddd;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
-    margin: 20px;
-    justify-content: center; /*for horizontal*/
-    align-items: center; /*for vertical*/
-}
-
-.product-item{
-    border: 1px solid #ccc;
-    text-align: center;
     background-color: #f9f9f9;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-}
-
-.product-item img{
+  }
+  
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 10%;
     max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.product-name{
+  }
+  
+  .product-description {
     margin: 10px 0;
-}
-
-.product-price{
+  }
+  
+  .product-price {
     font-weight: bold;
-}
-
-.add-to-cart-button{
+  }
+  
+  .add-to-cart-button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -121,7 +116,7 @@ footer {
     margin: 4px 2px;
     cursor: pointer;
     border: none;
-}
+  }
 
 /* log in page - safaa*/
 

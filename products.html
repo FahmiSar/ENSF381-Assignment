@@ -2,53 +2,47 @@
 <html lang="en">
   
 	<head>
-		<!-- Add meta tags, title, and link to styles.css here -->
         <title>Website Conatact us page: WB</title>
-        <!-- Misspelt the url to style.css to ensure broswer doesnt use css -->
         <link rel="stylesheet" href="styles.css">
 	</head>
   
 
-    <body style="background-color:lightblue;">
-    <header>
-        <img style="width: 350px;" src= "./images/wblogo.png" alt="Logo of WB">
-        <h1>WATER BOTTLES </h1>
-    </header>
+    <body>
+        <header>
+            <img style="width: 100px;" src= "./images/wblogo.png" alt="Logo of WB">
+            <h1>WATER BOTTLES </h1>
+        </header>
       
-		<div><ul>
-         <a href= "index.html"> Home page </a>
-          <a href= "contact.html">   Contact </a>
-          <a href= "login.html"> Log in  </a>
-          <br>
-    </ul>	<!-- Navigation links go here -->
-		</div>
+		<div>
+            <!-- Navigation links go here -->
+              <a href= "index.html">Home</a>
+              <a href= "contact.html">Contact</a>
+              <a href= "login.html">Log in</a>
+        </div>
       
         
-      <header><h2>Products</h2></header>
-      
-      
-		<main class="flex-container">
-<!-- Each product must be displayed with an image of the product, followed
-by the name, price, and a button to add the product to the cart. Use the heading element to
-display the name of the product. -->
-            
-            <h3>Evian Water</h3>
-            <img src="./images/evian.png" alt="picture of evian water bottle">
-            <p>Price: $1.29
-            <button type ="button">Add to Cart</button>
-            </p>
-            
-            <h3>Pure Life</h3>
-            <img src="./images/PureLife.jpg" alt="picture of pure life bottle">
-            <p>Price: $2.00
-            <button type ="button">Add To Cart</button>
-             </p>
+      <h2>Products</h2>
+		<main>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="./images/evian.png" class="product-image">
+                    <div class="product-description">Product 1 Description</div>
+                    <div class="product-price">$19.99</div>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/PureLife.jpg" class="product-image">
+                    <div class="product-description">Product 2 Description</div>
+                    <div class="product-price">$29.99</div>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
 
 		</main>
   
 		<footer> 
 			<!-- Copyright notice goes here -->
-            <p>Copyright Safaa Tazin, Fahmi Sardar</p>
+            Copyright Safaa Tazin, Fahmi Sardar
 		</footer>
   
 	</body>
