@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
 }
 
-nav{
+.nav{
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -29,16 +29,14 @@ main > .about-us{
     background-color: #ddd;
 }
 
-
-/* div > a prevents the "shop now" button from being effected */
-nav a {
+.nav a {
     font-family: "Arial", sans-serif; 
     font-size: 20px; 
     color: green; 
     text-decoration: underline;
 }
 
-nav a:hover {
+.nav a:hover {
     color: red
 }
 
@@ -88,13 +86,12 @@ footer {
   }
   
 .product-card {
-    border: 1px solid #ccc;
+    background-color: #f9f9f9;
     padding: 10px;
     text-align: center;
   }
   
   .product-image {
-    width: 10%;
     max-width: 100%;
   }
   
