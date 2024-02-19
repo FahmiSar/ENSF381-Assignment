@@ -11,13 +11,6 @@ header {
     justify-content: space-between;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: #333;
-    padding: 10px 20px;
-}
 
 /* I dont really like how the text is formatted*/
 main > .about-us{
@@ -27,6 +20,13 @@ main > .about-us{
     padding: 20px;
     margin: 20px;
     background-color: #ddd;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px 20px;
 }
 
 .nav a {
@@ -97,22 +97,25 @@ footer {
   
   .product-description {
     margin: 10px 0;
+    font-size: x-large;
   }
   
   .product-price {
     font-weight: bold;
+    font-size: x-large;
   }
   
   .add-to-cart-button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
     border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .add-to-cart-button:hover{
+    background-color: #45A049;
   }
 
 /* log in page - safaa*/
