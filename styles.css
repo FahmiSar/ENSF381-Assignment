@@ -1,3 +1,7 @@
+body{
+    background-color:lightblue;
+}
+
 header {
     background-color: #333;
     padding: 20px;
@@ -7,13 +11,6 @@ header {
     justify-content: space-between;
 }
 
-div{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: #333;
-    padding: 10px 20px;
-}
 
 /* I dont really like how the text is formatted*/
 main > .about-us{
@@ -25,16 +22,21 @@ main > .about-us{
     background-color: #ddd;
 }
 
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px 20px;
+}
 
-/* div > a prevents the "shop now" button from being effected */
-div a {
+.nav a {
     font-family: "Arial", sans-serif; 
     font-size: 20px; 
     color: green; 
     text-decoration: underline;
 }
 
-div a:hover {
+.nav a:hover {
     color: red
 }
 
@@ -70,38 +72,51 @@ footer {
     font-family:sans-serif
 }
 
+/* product.html - fahmi*/
 
-/* .flex-container is used in products.html (will be renamed cause its a bad name)*/
-/* Lost marks for assignment 1 cause we didn't have 4 products (add two more)*/
-.flex-container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.flex-container > img{
-    width: 15%;
-}
-
-.flex-container > button{
-    width: 6%;
-    margin: 0;
-}
-
-.flex-container > h3{
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  
+.product-card {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-image {
+    max-width: 100%;
+  }
+  
+  .product-description {
+    margin: 10px 0;
     font-size: x-large;
-    margin-top: 1%;
-    margin-bottom: 0;
-}
+  }
+  
+  .product-price {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  .add-to-cart-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+  }
 
-.flex-container > p{
-    margin-top: 5px;
-    font-size: large;
-}
-
-p{
-    color:Black; font-family: sans-serif
- }
+  .add-to-cart-button:hover{
+    background-color: #45A049;
+  }
 
 /* log in page - safaa*/
 
