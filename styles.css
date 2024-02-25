@@ -37,7 +37,7 @@ main > .about-us{
 }
 
 .nav a:hover {
-    color: red
+    color: red;
 }
 
 main .shop-now-btn {
@@ -170,4 +170,26 @@ a.signup-link {
 
 a.signup-link:hover {
     text-decoration: underline;
+}
+
+/* Contact.html stuff */
+
+.contact-information-box{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.contact-method{
+    background-color: #ddd;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.contact-method a:hover{
+    color: #007BFF;
 }
