@@ -128,7 +128,7 @@ footer {
 
 /* log in page - safaa*/
 
-form {
+.userInfo-box {
     background-color: #ddd;
     padding: 20px;
     margin: 20px;
@@ -136,13 +136,15 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-label {
+
+.userInfo-box label {
     display: block;
     margin: 10px;
 }
 
-input[type="text"], input[type="password"] {
+.userInfo-box input {
     background-color: #fff;
     padding: 10px;
     margin: 10px;
@@ -150,7 +152,7 @@ input[type="text"], input[type="password"] {
     width: 300px;
 }
 
-button[type="submit"] {
+.userInfo-box button {
     background-color: #4CAF50;
     padding: 10px;
     border-radius: 5px;
@@ -159,7 +161,7 @@ button[type="submit"] {
     transition: background-color 0.3s, opacity 0.3s;
 }
 
-button[type="submit"]:hover {
+.userInfo-box button:hover {
     background-color: #45A049;
     opacity: 1.0;
 }
