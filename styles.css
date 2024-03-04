@@ -165,7 +165,8 @@ footer {
     background-color: #45A049;
     opacity: 1.0;
 }
-/* dek what the sign up link is?*/
+
+/* sign-up.html style */
 a.signup-link {
     color: #007BFF;
     text-decoration: none;
@@ -175,6 +176,14 @@ a.signup-link {
 
 a.signup-link:hover {
     text-decoration: underline;
+}
+
+.error-message{
+    display: block;
+    border: 2px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 20px;
 }
 
 /* Contact.html stuff */

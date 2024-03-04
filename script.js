@@ -1,4 +1,34 @@
 // signup.html
+
+
+function checkForErrorBox(){
+    var messageBox = document.querySelector(".error-message");
+
+    // if messageBox = null; create a box
+    if(!messageBox){
+        messageBox = document.createElement("div");
+        messageBox.classList.add("error-message");
+        document.body.appendChild(messageBox);
+    }
+
+    return messageBox;
+}
+
+function createMessage(message){
+    var messageBox = checkForErrorBox();
+
+    // error message is a bad name but it work (replace with something better)
+    var errorMessage = document.createElement("p");
+    var errorMessageText = document.createTextNode(message);
+
+    errorMessage.appendChild(errorMessageText);
+    messageBox.appendChild(errorMessage);
+    
+    var mainElement = document.querySelector("main");
+    mainElement.appendChild(messageBox);    
+}
+
+// checks for errors after submit button is pressed
 document.getElementById('signup-form').addEventListener('submit',function(event){
     event.preventDefault();
     // username is a string type 
@@ -19,41 +49,44 @@ document.getElementById('signup-form').addEventListener('submit',function(event)
     var minLength = 3;
     var maxLength = 20;
 
+    var errorOccured = false;
     // <<<< Remove the alerts and put in a way so <p> elements are added >>>>>>>
 
     // -------- Username Checks ------------
     if(username.length < minLength || username.length > maxLength ){
-        alert('Check Username again');
-        return;
+        createMessage("Username is too short or too long");
+        errorOccured = true;
     }
 
     if(!username.match(usernameRegex)){
-        alert("check Username");
-        return;
+        createMessage("Username has illegal characters");   
+        errorOccured = true;     
     }
 
     // -------- Password Checks --------
 
     if(password !== confirmPassword){
-        alert('Password do not match');
-        return;
+        createMessage("Password does not match");
+        errorOccured = true;
     }
 
     if(password.length < 8){
-        alert("Password too short");
-        return;
+        createMessage("Password too short");
+        errorOccured = true;
     }
 
     if(!password.match(passwordRegex)){
-        alert("Check Password");
-        return;
+        createMessage("Password might contain illegal characters");
+        errorOccured = true;
     }
 
     // ------------ Email Checks ----------
     if(!email.match(emailRegex)){
-        alert("Check Email");
-        return;
+        createMessage("Check Email");
+        errorOccured = true;
     }
 
-    console.log("success");
+    if(!errorOccured){
+        createMessage("Successful Login");
+    }
 });
