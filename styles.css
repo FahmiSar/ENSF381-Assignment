@@ -105,7 +105,7 @@ footer {
     max-width: 100%;
   }
   
-  .product-description {
+  .product-title h2{
     margin: 10px 0;
     font-size: x-large;
   }
@@ -127,6 +127,38 @@ footer {
 
   .add-to-cart-button:hover{
     background-color: #45A049;
+  }
+
+  .shopping-cart{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #ddd;
+  }
+
+  .shopping-cart h3{
+    font-size: x-large;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .in-cart{
+    margin: 0;
+  }
+
+  .remove-cart-button{
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .remove-cart-button:hover{
+    background-color: #ff0000;
   }
 
 /* log in page - safaa*/
