@@ -4,60 +4,65 @@ Name:                               UCID
 Fahmi Ahasan Sardar                 30176440
 Safaa Tazin                         30191520 
 -->
+<!-- index.html -->
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-		<!-- Add meta tags, title, and link to styles.css here -->
-        <title>Website Shop: WB</title>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, inital-scale = 1.0">
-        <meta name="description" content="Welcome to WB - Your Hydration Destination!">
-        <link rel="stylesheet" href="styles.css">
-	</head>
+<html lang="en">
 
-  
-  <header>
-    <img style="width: 100px;" src= "./images/wblogo.png" alt="Logo of WB">
-    <h1>WATER BOTTLES </h1>
-  </header>
+<head>
+    <!-- Add meta tags, title, and link to styles.css here -->
+    <title>Website Shop: WB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="description" content="Welcome to WB - Your Hydration Destination!">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-<div class = "nav">
-    <!-- Navigation links go here -->
-      <a href= "index.html">Home</a>
-      <a href= "contact.html">Contact</a>
-      <a href= "products.html">Products</a>
-</div>
+<body>
 
-  <div>
+    <header>
+        <img style="width: 100px;" src="./images/wblogo.png" alt="Logo of WB">
+        <h1>WATER BOTTLES </h1>
+    </header>
 
-		<main>
-       
-          <form class="userInfo-box">
+    <div class="nav">
+        <!-- Navigation links go here -->
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html">Products</a>
+    </div>
+
+    <main>
+        <form id="loginForm" class="userInfo-box">
             <table>
-              <tr>
-              <th><label for = "username">Username:</label></th>
-              <td><input type="text" id ="username" name = "username" placeholder="Enter your username" required></td>
-              </tr>
-              
-               <tr>
-              <th><label for = "password">Password:</label></th>
-              <td><input type="password" id ="password" name = "password" placeholder="Enter your password" required></td>
-              </tr>
-            </table>
-            <button type = "Submit">Login</button>
-            
-            <p>
-              Don't have an account, sign up
-              <a class="signup-link" href="signup.html">Sign Up</a>
-            </p>
+                <tr>
+                    <th><label for="username">Username:</label></th>
+                    <td><input type="text" id="username" name="username" placeholder="Enter your username" required></td>
+                </tr>
 
-          </form>
-		</main>
-  
-		<footer>		
-			<!-- Copyright notice goes here -->
-            Copyright Safaa Tazin, Fahmi Sardar
-		</footer>
-  
-	</body>
+                <tr>
+                    <th><label for="password">Password:</label></th>
+                    <td><input type="password" id="password" name="password" placeholder="Enter your password" required></td>
+                </tr>
+            </table>
+            <button type="submit">Login</button>
+
+            <p>
+                Don't have an account? Sign up <a class="signup-link" href="signup.html">here</a>.
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Copyright notice goes here -->
+        Copyright Safaa Tazin, Fahmi Sardar
+    </footer>
+
+    <div id="messageBox">
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>
