@@ -155,3 +155,47 @@ if(window.location.pathname.includes("signup.html")){
         }
     });
 }
+
+
+
+
+
+//safaa
+
+document.addEventListener("DOMContentLoaded", function() {
+    const loginForm = document.getElementById("loginForm");
+    const messageBox = document.getElementById("messageBox");
+    const messageText = document.getElementById("message");
+    
+    loginForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const user = data.find(user => user.name === username && user.email === password);
+                if (user) {
+                    showMessage("success", "Login successful!");
+                } else {
+                    showMessage("error", "Invalid username or password");
+                }
+            })
+            .catch(error => {
+                showMessage("error", "Failed to fetch data from server");
+            });
+    });
+
+    function showMessage(type, text) {
+        messageText.textContent = text;
+        messageBox.className = type;
+        messageBox.style.display = "block"; // Show the message box
+    }
+});
