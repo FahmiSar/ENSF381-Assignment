@@ -242,3 +242,21 @@ a.signup-link:hover {
 .contact-method a:hover{
     color: #007BFF;
 }
+
+
+
+
+-safaa-
+.userInfo-box {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#messageBox {
+  display: none; /* Initially hide the message box */
+  border: 2px solid;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 20px;
+}
